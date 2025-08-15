@@ -1,0 +1,12 @@
+class Solution:
+    def reverseArray(self, arr):
+        arr1 = []
+        for i in range(len(arr)-1, -1, -1):
+            arr1.append(arr[i])
+        
+        for i in range(len(arr1)):
+            arr[i] = arr1[i]     # replacing arr1 values to arr
+        return arr
+
+        
+        
